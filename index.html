@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Image%20FP_2024/hinh-nen-trai-tim-28.png'); /* Đường dẫn tới hình nền trái tim */
+            background-repeat: repeat;
+            background-size: 500px 500px; /* Kích thước nhỏ hơn cho nhiều hình trái tim */
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+        }
+        .message {
+            font-size: 18px;
+            margin-top: 20px;
+            display: none; /* Ẩn mặc định */
+        }
+        .message1 {
+            font-size: 12px;
+            margin-top: 14px;
+            display: none; /* Ẩn mặc định */
+        }
+        .signature {
+            margin-top: 20px;
+            margin-right: 32px;
+            font-weight: bold;
+            text-align: right; /* Căn dòng cuối sang phải */
+        }
+        .button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div id="heart" class="heart">❤️</div>
+        <h1 id="h1" class="">Happy Valentine's Day!</h1>
+        <h1 id="h2" class="">Bé Loan ngoan xinh yêu của anh!</h1>
+        <button class="button" id="loveButton" onclick="showAllMessages()">Click vào đây nhé em yêu</button>
+        <p id="message1" class="message">Từ lần đầu gặp nhau, anh đã biết rằng em là người anh luôn tìm kiếm</p>
+        <p id="message2" class="message">Cảm ơn em đã mang đến ánh sáng và niềm vui cho cuộc sống của anh</p>
+        <p id="message3" class="message">Anh thực sự trân trọng từng khoảnh khắc được bên em. Em sẽ làm bạn gái và yêu anh nhé ❤️</p>
+        <p id="h3" class="message1 signature"> Người thương em, <br>Thắng Nguyễn</p>
+    </div>
+
+    <script>
+        function showAllMessages() {
+            document.getElementById("h1").style.display = "none";
+            document.getElementById("h2").style.display = "none";
+            document.getElementById("heart").style.display = "none";
+            document.getElementById("h3").style.display = "block";
+
+            document.getElementById("message1").style.display = "block";
+            document.getElementById("message2").style.display = "block";
+            document.getElementById("message3").style.display = "block";
+            document.getElementById("loveButton").innerText = "Ngoan xinh yêu của anh ❤️"; // Thay đổi chữ trên button        
+            }
+    </script>
+</body>
+</html>
